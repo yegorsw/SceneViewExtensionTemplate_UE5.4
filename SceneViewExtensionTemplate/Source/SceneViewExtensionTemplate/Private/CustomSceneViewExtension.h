@@ -10,6 +10,7 @@
 #include "SceneViewExtension.h"
 #include "PostProcess/PostProcessing.h"
 #include "PostProcess/PostProcessMaterial.h"
+#include "DataDrivenShaderPlatformInfo.h"
 
 class FCustomSceneViewExtension : public FSceneViewExtensionBase
 {

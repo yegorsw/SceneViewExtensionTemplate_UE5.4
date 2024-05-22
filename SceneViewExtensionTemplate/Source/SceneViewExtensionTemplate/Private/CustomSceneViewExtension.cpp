@@ -39,7 +39,7 @@ FScreenPassTexture FCustomSceneViewExtension::CustomPostProcessing(FRDGBuilder& 
 	const FSceneViewFamily& ViewFamily = *SceneView.Family;
 	const ERHIFeatureLevel::Type FeatureLevel = SceneView.GetFeatureLevel();
 
-	const FScreenPassTexture& SceneColor = Inputs.Textures[(uint32)EPostProcessMaterialInput::SceneColor];
+	const FScreenPassTexture& SceneColor = Inputs.ReturnUntouchedSceneColorForPostProcessing(GraphBuilder);
 
 	if (!SceneColor.IsValid() || CVarShaderOn.GetValueOnRenderThread() == 0)
 	{
