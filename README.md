@@ -1,3 +1,5 @@
+# This repository is not necessary as the original project has been updated for UE 5.4
+
 # SceneViewExtensionTemplate
 
 Unreal Engine 5 plugin template for adding a custom rending pass into the engine with a SceneViewExtension
